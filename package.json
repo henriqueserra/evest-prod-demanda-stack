@@ -1,0 +1,63 @@
+{
+  "name": "everest-demanda-stack",
+  "version": "0.1.666",
+  "bin": {
+    "everest-demanda-stack": "bin/everest-demanda-stack.js"
+  },
+  "scripts": {
+    "build": "clear && rm -rf dist && tsc && cdk synth --all",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.160",
+    "@types/node": "^25.2.3",
+    "aws-cdk": "^2.1106.0",
+    "esbuild": "^0.27.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "eslint": "^10.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.990.0",
+    "@aws-sdk/client-dynamodb": "^3.990.0",
+    "@aws-sdk/client-eventbridge": "^3.990.0",
+    "@aws-sdk/client-lambda": "^3.990.0",
+    "@aws-sdk/client-s3": "^3.990.0",
+    "@aws-sdk/client-ses": "^3.990.0",
+    "@aws-sdk/client-sqs": "^3.990.0",
+    "@aws-sdk/s3-request-presigner": "^3.990.0",
+    "@aws-sdk/util-dynamodb": "^3.990.0",
+    "@json2csv/plainjs": "^7.0.6",
+    "@nestjs/cli": "^11.0.16",
+    "@sendgrid/mail": "^8.1.6",
+    "aws-cdk-lib": "^2.238.0",
+    "axios": "^1.13.5",
+    "constructs": "^10.4.5",
+    "dotenv": "^17.3.1",
+    "jwk-to-pem": "^2.0.7",
+    "pg": "^8.18.0",
+    "qs": "^6.14.2",
+    "source-map-support": "^0.5.21",
+    "xlsx-populate": "~1.21.0",
+    "zod": "^3"
+  },
+  "overrides": {
+    "@aws-cdk/cloud-assembly-schema": "48.20.0"
+  },
+  "description": "This is a blank project for CDK development with TypeScript.",
+  "main": "jest.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "Henrique Ribeiro Serra",
+  "license": "ISC",
+  "Environment": "Prod",
+  "account": "028901343047",
+  "region": "us-east-1",
+  "Project": "Everest",
+  "StackName": "demanda-stack"
+}
